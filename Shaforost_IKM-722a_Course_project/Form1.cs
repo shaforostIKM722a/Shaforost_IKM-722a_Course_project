@@ -13,6 +13,8 @@ namespace Shaforost_IKM_722a_Course_project
     public partial class Form1 : Form
     {
         private bool Mode; // Режим дозволу / заборони введення даних
+        private MajorWork MajorObject; // Створення об'єкта класу MajorWork
+
         public Form1()
         {
             InitializeComponent();
@@ -37,6 +39,10 @@ namespace Shaforost_IKM_722a_Course_project
             }
             else
             {
+
+                MajorObject.Write(tbInput.Text);// Запис даних у об'єкт
+                MajorObject.Task();// Обробка даних
+                label1.Text = MajorObject.Read();// Відображення результату
                 tClock.Stop();
                 tbInput.Enabled = false;// Режим заборони введення
                 bStart.Text = "Пуск";// зміна тексту на кнопці на "Пуск"
@@ -47,6 +53,10 @@ namespace Shaforost_IKM_722a_Course_project
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Mode = true;
+            MajorObject = new MajorWork();
+            About A = new About(); // створення форми About
+            A.tAbout.Start();
+            A.ShowDialog(); // відображення діалогового вікна About
         }
 
         private void tbInput_KeyPress(object sender, KeyPressEventArgs e)
