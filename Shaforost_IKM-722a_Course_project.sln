@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shaforost_IKM-722a_Course_project", "Shaforost_IKM-722a_Course_project\Shaforost_IKM-722a_Course_project.csproj", "{08909B42-E68E-4072-BB85-E775F0EE5F75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08909B42-E68E-4072-BB85-E775F0EE5F75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08909B42-E68E-4072-BB85-E775F0EE5F75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08909B42-E68E-4072-BB85-E775F0EE5F75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08909B42-E68E-4072-BB85-E775F0EE5F75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02B4CBAF-428A-4727-BFD6-A68E6A33D4A1}
+	EndGlobalSection
+EndGlobal
