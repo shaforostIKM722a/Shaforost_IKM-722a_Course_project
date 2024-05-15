@@ -21,8 +21,7 @@ namespace Shaforost_IKM_722a_Course_project
         private void tClock_Tick(object sender, EventArgs e)
         {
             tClock.Stop();
-            MessageBox.Show("Минуло 25 секунд", "Увага");// Виведення повідомлення
-                                                         // "Минуло 25 секунд" на екран
+            MessageBox.Show("Минуло 25 секунд", "Увага");// Виведення повідомлення "Минуло 25 секунд" на екран
             tClock.Start();
         }
 
