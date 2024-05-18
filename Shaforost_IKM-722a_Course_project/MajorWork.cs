@@ -10,7 +10,7 @@ namespace Shaforost_IKM_722a_Course_project
     {
         private string Data; //вхідні дані
         private string Result; // Поле результату
-
+        private System.DateTime TimeBegin; // час початку роботи програми
 
         public void Write(string D)
         {
@@ -35,5 +35,14 @@ namespace Shaforost_IKM_722a_Course_project
             }
         }
 
+        public void SetTime() // метод запису часу початку роботи програми
+        {
+            this.TimeBegin = System.DateTime.Now;
+        }
+
+        public System.DateTime GetTime() // Метод отримання часу завершення програми
+        {
+            return this.TimeBegin;
+        }
     }
 }
