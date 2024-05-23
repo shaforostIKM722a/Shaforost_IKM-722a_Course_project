@@ -108,7 +108,7 @@ namespace Shaforost_IKM_722a_Course_project
         {
             tClock.Stop();
             tClock.Start();
-            if ((e.KeyChar >= '0') & (e.KeyChar <= '9') | (e.KeyChar == (char)8))
+            if ((e.KeyChar >= '0') & (e.KeyChar <= '9') | (e.KeyChar == (char)8) || e.KeyChar == ',')
             {
                 return;
             }
@@ -119,6 +119,7 @@ namespace Shaforost_IKM_722a_Course_project
                 tClock.Start();
                 e.KeyChar = (char)0;
             }
+
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)

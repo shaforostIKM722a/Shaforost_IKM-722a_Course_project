@@ -40,12 +40,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(41, 58);
+            this.label1.Location = new System.Drawing.Point(23, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(428, 186);
+            this.label1.Size = new System.Drawing.Size(446, 248);
             this.label1.TabIndex = 0;
             this.label1.Text = "Розробила\r\nСтудентка групи ІКМ-722а\r\nШафорост Олександра Павлівна\r\n\r\nТекст завдан" +
-    "ня:\r\nТекст\r\n";
+    "ня:\r\nВиділити з послідовності ті числа, \r\nякі діляться на 6\r\n і впорядкувавти їх" +
+    " за зростанням\r\n";
             // 
             // button1
             // 

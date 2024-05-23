@@ -38,16 +38,36 @@ namespace Shaforost_IKM_722a_Course_project
 
         public void Task()
         {
-            if (this.Data.Length > 5)
+            if (Data.Length > 0)
             {
-                this.Result = Convert.ToString(true);
+                string resultString = "Числа з вашого списку, які діляться на 6: ";
+                string numbers = "";
+                string[] dataParts = Data.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
+                if (dataParts.Length <= 8)
+                {
+                    int[] intData = dataParts.Select(int.Parse).ToArray();
+                    foreach (int i in intData)
+                    {
+                        if (i % 6 == 0)
+                        {
+                            numbers += i + ",";
+                        }
+                    }
+
+                    numbers = string.Join(",", numbers.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries).OrderBy(int.Parse));
+                    this.Result = resultString + numbers;
+                }
+                else{
+                    MessageBox.Show("Максимально до 8 чисел","Попередження!");
+                }
             }
             else
             {
-                this.Result = Convert.ToString(false);
+                MessageBox.Show("Заповіть поле вводу тексту", "Попередження!");
             }
-            this.Modify = true; // Дозвіл запису
+
+            this.Modify = true;
         }
 
         public void SetTime() // метод запису часу початку роботи програми
